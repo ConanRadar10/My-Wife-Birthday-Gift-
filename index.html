@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Untuk Istriku ❤️</title>
+<meta name="theme-color" content="#f7a8c4">
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap');
+:root{--pink:#f59ab9;--rose:#e978a0;--deep:#7d3853;--cream:#fff8fb;--ink:#4b2734}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:#f4dbe4;color:var(--ink);font-family:"DM Sans",system-ui,sans-serif}
+.phone{width:min(100%,520px);margin:auto;background:linear-gradient(180deg,#fff8fb,#ffeef5);min-height:100vh;overflow:hidden;position:relative;box-shadow:0 0 50px #9d496133}
+.screen{min-height:100vh;display:grid;place-items:center;padding:34px 22px;position:relative}
+.card{width:100%;max-width:440px;text-align:center;position:relative;z-index:2}
+h1,h2,h3{font-family:"Playfair Display",serif;margin:.2em 0;color:var(--deep)}
+h1{font-size:clamp(42px,12vw,68px);line-height:.98}
+h2{font-size:36px}.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#b75d7d;font-weight:700}
+.sub{font-size:15px;line-height:1.8;color:#70495a}
+button{border:0;border-radius:999px;background:var(--deep);color:white;padding:14px 22px;font-weight:700;cursor:pointer;box-shadow:0 10px 25px #7d385333}
+.ghost{background:#ffffffb8;color:var(--deep);border:1px solid #e9b6c8;box-shadow:none}
+#intro{background:radial-gradient(circle at 50% 40%,#fff 0,#ffeaf2 43%,#f8bfd2 100%)}
+.heart{font-size:78px;filter:drop-shadow(0 12px 20px #d65d8c55);animation:pulse 1.6s infinite}
+@keyframes pulse{50%{transform:scale(1.08)}} 
+.float{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.float span{position:absolute;opacity:.45;animation:rise linear infinite}
+@keyframes rise{from{transform:translateY(110vh) rotate(0);opacity:0}20%{opacity:.45}to{transform:translateY(-20vh) rotate(30deg);opacity:0}}
+.timeline{text-align:left;margin-top:25px}
+.titem{display:grid;grid-template-columns:28px 1fr;gap:14px;margin:0 0 20px}
+.dot{width:14px;height:14px;border-radius:50%;background:var(--rose);margin-top:6px;box-shadow:0 0 0 7px #f59ab925}
+.tbox{background:#ffffffb8;border:1px solid #f3cada;border-radius:20px;padding:16px;box-shadow:0 8px 25px #9f496318}
+.tbox strong{display:block;color:var(--deep);margin-bottom:5px}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:20px}
+.photo{aspect-ratio:1;border-radius:22px;background:linear-gradient(135deg,#f9c6d8,#fff);display:grid;place-items:center;overflow:hidden;border:1px solid #f2c0d1;color:#a85b78;font-size:13px}
+.photo.wide{grid-column:span 2;aspect-ratio:16/9}
+.photo img,.photo video{width:100%;height:100%;object-fit:cover}
+.letter{margin-top:20px;text-align:left;background:#fffdf9;border-radius:8px;padding:28px 22px;box-shadow:0 18px 45px #8d496025;line-height:1.9;font-family:"Playfair Display",serif;font-size:17px;position:relative}
+.letter:before{content:"";position:absolute;inset:10px;border:1px solid #efd6c6;pointer-events:none}
+.letter p{position:relative}
+.counter{display:flex;justify-content:center;gap:10px;margin:22px 0}.pill{background:#fff;border:1px solid #f1c5d5;padding:10px 14px;border-radius:16px;font-size:12px}
+.reveal{margin-top:22px;min-height:100px;display:grid;place-items:center}
+.gift{font-size:72px;cursor:pointer;animation:bob 1.8s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-8px) rotate(-2deg)}}
+.hidden{display:none!important}.music{position:fixed;right:18px;bottom:18px;z-index:20;width:48px;height:48px;padding:0;border-radius:50%;background:#fff;color:var(--deep);border:1px solid #efb6c9}
+footer{padding:10px 0 50px;text-align:center;font-size:12px;color:#9b6076}
+.small{font-size:12px;color:#9b6076}.nav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:20px}
+@media(min-width:700px){body{padding:20px}.phone{border-radius:32px}}
+</style>
+</head>
+<body>
+<audio id="birthdayAudio" src="./happybirthday.mp3" preload="auto"></audio>
+<div class="phone">
+<div class="float" id="float"></div>
+
+<section class="screen" id="intro">
+  <div class="card">
+    <div class="eyebrow">A little birthday surprise</div>
+    <div class="heart">❤️</div>
+    <h1>Untuk<br>Ernacu 💕</h1>
+    <p class="sub">Ada satu hadiah kecil yang aku buat khusus untukmu.<br>Jangan buru-buru ya… nikmati sampai akhir. 💕</p>
+    <button onclick="go('story')">Buka hadiahnya ✨</button>
+  </div>
+</section>
+
+<section class="screen" id="story">
+  <div class="card">
+    <div class="eyebrow">Hari spesialmu</div>
+    <h2>Selamat Ulang Tahun,<br>Istriku 💗</h2>
+    <p class="sub">Semoga hari ini mengingatkanmu betapa berharganya kamu—bukan hanya hari ini, tapi setiap hari.</p>
+    <div class="counter">
+      <div class="pill">🌷 disayangi</div><div class="pill">💌 dihargai</div><div class="pill">✨ dicintai</div>
+    </div>
+    <button onclick="go('timeline')">Perjalanan cinta →</button>
+  </div>
+</section>
+
+<section class="screen" id="timeline">
+  <div class="card">
+    <div class="eyebrow">Our story</div>
+    <h2>Timeline perjalanan cinta</h2>
+    <div class="timeline">
+      <div class="titem"><div class="dot"></div><div class="tbox"><strong>Awal kita bertemu</strong>Hari ketika cerita kita dimulai.</div></div>
+      <div class="titem"><div class="dot"></div><div class="tbox"><strong>Hari-hari yang tumbuh</strong>Dari obrolan sederhana menjadi rasa yang semakin dalam.</div></div>
+      <div class="titem"><div class="dot"></div><div class="tbox"><strong>Menjadi keluarga</strong>Memilih satu sama lain, dalam suka maupun lelah.</div></div>
+      <div class="titem"><div class="dot"></div><div class="tbox"><strong>Hari ini</strong>Kita masih di sini—dan semoga terus bersama.</div></div>
+    </div>
+    <button onclick="go('letter')">Baca suratku 💌</button>
+  </div>
+</section>
+
+<section class="screen" id="letter">
+  <div class="card">
+    <div class="eyebrow">From my heart</div>
+    <h2>Untuk istriku</h2>
+    <div class="letter">
+      <p>Istriku,</p>
+      <p>Di hari ulang tahunmu ini, aku cuma ingin kamu tahu satu hal: aku bersyukur sekali karena dalam perjalanan hidup ini, aku dipertemukan denganmu.</p>
+      <p>Maaf untuk semua sikap, perkataan, atau hal-hal yang mungkin pernah membuatmu kecewa. Aku mungkin tidak selalu pandai mengungkapkan semuanya lewat kata-kata, tapi rasa sayangku kepadamu selalu ada.</p>
+      <p>Terima kasih karena sudah hadir, menemani hari-hariku, menjadi tempat pulang, dan membuat hidup ini terasa lebih berarti.</p>
+      <p>Semoga umurmu bertambah bersama lebih banyak bahagia, kesehatan, rezeki, dan mimpi yang menjadi nyata. Dan semoga aku selalu punya kesempatan untuk berjalan di sampingmu.</p>
+      <p>Selamat ulang tahun, istriku. Aku mencintaimu. ❤️</p>
+      <p style="text-align:right">— Dari Anggaracu</p>
+    </div>
+    <button style="margin-top:22px" onclick="go('surprise')">Ada satu kejutan lagi… 🎁</button>
+  </div>
+</section>
+
+<section class="screen" id="surprise">
+  <div class="card">
+    <div class="eyebrow">The final surprise</div>
+    <h2>Satu hadiah terakhir</h2>
+    <p class="sub">Sentuh kadonya. Jangan malu kalau senyum sendiri. 😌</p>
+    <div class="reveal">
+      <div class="gift" onclick="openGift()">🎁</div>
+      <div id="final" class="hidden">
+        <h2>AKU CINTA KAMU ❤️</h2>
+        <p class="sub">Selamat ulang tahun, istriku.<br>Hari ini, besok, dan seterusnya—kita lagi, ya?</p>
+        <button onclick="go('intro')">Putar lagi dari awal ↻</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>Made with love • Untuk Istriku ❤️</footer>
+<button class="music" id="music" onclick="toggleMusic()" src= "happybirthday.mp3" aria-label="Musik">♫</button>
+</div>
+
+<script>
+const sections=['intro','story','memories','timeline','letter','surprise'];
+function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth'});}
+function openGift(){
+ document.querySelector('.gift').classList.add('hidden');
+ document.getElementById('final').classList.remove('hidden');
+ confetti();
+}
+function confetti(){
+ for(let i=0;i<35;i++){
+  const s=document.createElement('span');
+  s.textContent=['❤','✦','♡','•'][i%4];
+  s.style.position='fixed';s.style.left=(Math.random()*100)+'vw';s.style.top='-20px';
+  s.style.fontSize=(12+Math.random()*22)+'px';s.style.zIndex=50;
+  s.style.transition='transform '+(1.8+Math.random()*2)+'s ease, opacity 2s';
+  document.body.appendChild(s);
+  requestAnimationFrame(()=>{s.style.transform=`translateY(${100+Math.random()*80}vh) rotate(${Math.random()*720}deg)`;s.style.opacity=0});
+  setTimeout(()=>s.remove(),4000);
+ }
+}
+const f=document.getElementById('float');
+for(let i=0;i<18;i++){let s=document.createElement('span');s.textContent=i%2?'♡':'✦';s.style.left=Math.random()*100+'%';s.style.fontSize=10+Math.random()*18+'px';s.style.animationDuration=8+Math.random()*12+'s';s.style.animationDelay=-Math.random()*15+'s';f.appendChild(s);}
+
+let ctx, gain, playing=false, timer;
+function toggleMusic(){
+ if(!playing){
+  ctx=new (window.AudioContext||window.webkitAudioContext)(); gain=ctx.createGain();gain.gain.value=.045;gain.connect(ctx.destination);
+  const notes=[261.63,329.63,392,523.25,392,329.63]; let i=0;
+  timer=setInterval(()=>{const o=ctx.createOscillator();const g=ctx.createGain();o.type='sine';o.frequency.value=notes[i++%notes.length];g.gain.setValueAtTime(.0001,ctx.currentTime);g.gain.exponentialRampToValueAtTime(.18,ctx.currentTime+.04);g.gain.exponentialRampToValueAtTime(.0001,ctx.currentTime+1.4);o.connect(g);g.connect(gain);o.start();o.stop(ctx.currentTime+1.45)},650);
+  playing=true;document.getElementById('music').textContent='❚❚';
+ }else{clearInterval(timer);ctx.close();playing=false;document.getElementById('music').textContent='♫';}
+}
+</script>
+</body>
+</html>
